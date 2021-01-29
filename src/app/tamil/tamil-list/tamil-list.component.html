@@ -1,0 +1,45 @@
+<p>tamil-list works!</p>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+      <!-- <div class="navbar-header">
+          <a class="navbar-brand" href="#">TvMaze</a>
+      </div>
+      <ul class="nav navbar-nav" style="    display: flow-root;">
+          <li><a href="#">Home</a></li>
+
+          <li class="active">People</li>
+      </ul> -->
+
+      <!-- <form class="navbar-form navbar-left" action="/action_page.php">
+        <div class="search-hero">
+            <input class="form-control" type="text" name="search" [(ngModel)]="searchText"
+            autocomplete="off" placeholder="&#61442;  Start searching for a show by name or image">
+        </div>
+
+    </form> -->
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="row">
+      <!-- <div *ngFor='let post of peo'>
+        <a [routerLink]="['/tamilDetails/',post.id]">
+          <img [src]="post?.image?.medium" alt="" srcset class="img-fluid">
+          <p for="">{{post?.id}} {{post?.name}}</p>
+          <label for="">{{post?.name}}</label>
+        </a>
+      </div> -->
+
+      <a *ngFor="let hero of peo" class="col-1-4"
+    routerLink="/tamil/tamilDetails/ {{hero.id}}">
+    <img [src]="hero?.image?.medium" alt="" srcset class="img-fluid">
+  <div class="module hero">
+    <h4>{{hero.id}} {{hero.name}}</h4>
+    <!-- <h4>{{hero.name}}</h4> -->
+  </div>
+</a>
+  </div>
+</div>
+<!-- <app-tamil-detail></app-tamil-detail> -->
+<router-outlet></router-outlet>

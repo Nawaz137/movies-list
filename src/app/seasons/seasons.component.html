@@ -1,0 +1,35 @@
+<!-- <div class="container">
+    <div class="row px-xl-5 px lg-0">
+        <div class="col-md-3" *ngFor="let movie of season">
+          <a [routerLink]="['/seasons/seasonDetails/',movie.id]"></a>
+            <div class="main">
+                <div class="movie-img">
+                    <img src="{{movie.image.medium}}" class="backimg">
+                    <img class="movie-cover" src="{{movie.image.medium}}">
+                    <i class="fa fa-play"></i>
+                </div>
+                <h6>{{movie.name | slice: 0:30}}</h6>
+                <img src="https://californiachef.com/wp-content/uploads/2018/06/5-stars.png" class="rating">
+                <div class="head1 text-center">
+                    <p>Length</p>
+                    <p>Lang</p>
+                    <p>Rating</p>
+                    <p>Reviev</p>
+                </div>
+                <div class="head2 text-center">
+                    <p>{{movie.id}}</p>
+                    <p>{{movie.runtime}}</p>
+                    <p>{{"Dual"}}</p>
+                    <p>{{movie.rating.average}}</p>
+                    <p>45+</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<!-- <app-footer></app-footer> -->
+
+
+<app-season-list></app-season-list>
+<router-outlet></router-outlet>
